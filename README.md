@@ -1,5 +1,6 @@
-# protractor-parallel-instances
+protractor-parallel-instances
 ===
+
 Node module to create browser instances on the fly. It accepts a protractor config file to create new instances
 
 ```shell
