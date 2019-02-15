@@ -1,0 +1,67 @@
+{
+  "name": "protractor-parallel-instances",
+  "version": "1.2.0",
+  "description": "Node package to create protractor browser objects on the fly",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoaibmansoor/protractor-parallel-instances.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "webdriver:update": "webdriver-manager update --standalone=false --gecko=false",
+    "lint": "tslint  -p tsconfig.json -c tslint.json",
+    "lint:fix": "tslint  -p tsconfig.json -c tslint.json --fix",
+    "test": "protractor protractor.conf.js"
+  },
+  "keywords": [
+    "parallel",
+    "protractor",
+    "instances",
+    "protractor-parallel",
+    "dynamic",
+    "on-the-go",
+    "realtime",
+    "configuration",
+    "on-the-fly",
+    "conf"
+  ],
+  "author": "shoaib-mansoor",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.9",
+    "@angular/compiler": "^6.1.8",
+    "rxjs": "^6.3.2",
+    "@angular/core": "^6.1.8",
+    "jasmine": "^3.3.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "tslint-jasmine-rules": "^1.5.1",
+    "ts-node": "^8.0.2",
+    "tslint": "~5.11.0",
+    "codelyzer": "~4.4.4",
+    "typescript": "^3.1.5",
+    "tslint-eslint-rules": "^5.4.0",
+    "protractor": "file:~/node_modules/protractor",
+    "webdriver-manager": "file:~/node_modules/protractor/bin/webdriver-manager"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.1"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "sandbox",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect",
+      "sinon",
+      "browser",
+      "$"
+    ]
+  }
+}
